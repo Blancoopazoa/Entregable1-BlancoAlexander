@@ -52,6 +52,7 @@ function showProductTable() {
                         nombre: this.parentNode.parentNode.cells[1].textContent,
                         precio: parseFloat(this.parentNode.parentNode.cells[2].textContent.substring(1))
                     };
+                    console.log('Producto agregado:', producto, 'Cantidad:', cantidad);
                     var total = cantidad * producto.precio;
                     alert('Cantidad agregada: ' + cantidad + '\nTotal: $' + total.toFixed(2));
                 } else {
